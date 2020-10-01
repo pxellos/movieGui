@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="src/javagers/kjs/lib/mybatis-3.2.8.jar"/>
+	<classpathentry kind="lib" path="src/javagers/kjs/lib/ojdbc6.jar"/>
+	<classpathentry excluding="src/" kind="src" path=""/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

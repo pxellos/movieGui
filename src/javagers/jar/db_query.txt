@@ -1,0 +1,52 @@
+﻿CREATE TABLE customer_info (
+customer_name VARCHAR2(20),
+customer_id VARCHAR2(20),
+customer_pwd VARCHAR2(20),
+customer_birth VARCHAR2(20),
+customer_addr VARCHAR2(20),
+customer_gen VARCHAR2(20),
+customer_num VARCHAR2(20),
+customer_pnt NUMBER);
+
+CREATE TABLE reserve_info(
+reserve_date date,
+reserve_rnum NUMBER,
+reserve_num VARCHAR2(20),
+reserve_title VARCHAR2(20),
+reserve_screen NUMBER,
+reserve_round NUMBER,
+reserve_people NUMBER,
+reserve_price NUMBER,
+reserve_seat VARCHAR2(20),
+reserve_mnum VARCHAR2(20),
+reserve_time VARCHAR2(20),
+reserve_id VARCHAR2(20));
+
+CREATE TABLE screen_info (
+screen_screen NUMBER,
+screen_round NUMBER,
+screen_begin VARCHAR2(20),
+screen_end VARCHAR2(20),
+screen_mname VARCHAR2(20));
+
+CREATE TABLE movie_info (
+movie_num VARCHAR2(20),
+movie_name VARCHAR2(20),
+movie_genre VARCHAR2(20),
+movie_age VARCHAR2(20),
+movie_screen VARCHAR2(20),
+movie_price NUMBER,
+movie_image VARCHAR2(100),
+movie_infos VARCHAR2(20),
+movie_director VARCHAR2(20),
+movie_actor VARCHAR2(20));
+
+insert into movie_info values('1','악인전','movie_genre','19','1',1000,'src\\javagers\\jjy\\m1.jpg','movie_infos','movie_director','movie_actor');
+insert into movie_info values('2','어벤져스','movie_genre','15','2',1000,'src\\javagers\\jjy\\m2.jpg','movie_infos','movie_director','movie_actor');
+
+insert into screen_info values(1,1,'10:00','12:00','악인전');
+insert into screen_info values(2,2,'13:00','15:00','어벤져스');
+
+commit;
+
+
